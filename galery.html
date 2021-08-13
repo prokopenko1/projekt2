@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+  <script src="js/main.js" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="css/galerystyle.css">
+  <title>ADVENTURES</title>
+
+
+</head>
+<body>
+  <!-- прелоадер -->
+  <div class="preloader">
+    <div class="preloader_image"></div>
+  </div>
+
+  <!-- навбар -->
+  <nav class="header-section">
+    <div class="container-fluid">
+      <div class="inner-header">
+          <div class="logo">
+          <a href="./index.html"><img src="img/noor.png" width="120" height="50" alt=""></a>
+          <div class="weatherLoc">
+            <div id="city">
+                <div  id="weather">
+                  <img src="" id="weatherImg" >
+                  <!-- <h3 class="text-center data-item" id="weather-text"></h3> -->
+                </div>
+                <div  id="temp">
+                  <h5><span id="temp-text"></span> <span id="tempMode">&deg</span></h5>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="wrapper">
+          <div class="menuToggle icon">
+              <div class="hamburger"></div>
+          </div>
+          <ul class="menu">
+            <li ><a href="./index.html">Главная</a></li>
+            <li ><a href="./tur.html">Туры</a></li>
+            <li class="active"><a href="./galery.html">Галерея</a></li>
+            <li ><a href="./about-us.html">О нас</a></li>
+          </ul>
+      </div>
+      </div>
+
+  </nav>
+  <div class="parslayd">
+
+
+  <div class="swiper-container main-slider loading">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/pall.jpg)">
+        <img src="../img/pall.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">1</p>
+        <span class="caption"><p class="qwert">Поход с палатками. Днепр</p></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/korost.jpg)">
+        <img src="../img/korost.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">2</p>
+        <span class="caption"><p class="qwert">Багги на песчаном карьере</p></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/Peo.jpg)">
+        <img src="../img/Peo.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">3</p>
+        <span class="caption"><p class="qwert">Виндсёрфинг с нашими гостями и туристами</p></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/look.jpg)">
+        <img src="../img/look.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">4</p>
+        <span class="caption"><p class="qwert">5 минут полет нормальный :)</p></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/Еntertainment.jpg)">
+        <img src="../img/Еntertainment.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">5</p>
+        <span class="caption"><p class="qwert">Хороший вечер после хорошего дня :)</p></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/IMG_20201002_163634.jpg)">
+        <img src="../img/IMG_20201002_163634.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">6</p>
+        <span class="caption"><p class="qwert">Покоряем Аюдаг</p></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/8a9601b70940af4ce5862126b34fd24f95d6b148.png)">
+        <img src="../img/8a9601b70940af4ce5862126b34fd24f95d6b148.png" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">7</p>
+        <span class="caption"><p class="qwert">остров Хортица</p></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/345dbed0b83a47668c83cb1f997f8ee1.jpg)">
+        <img src="../img/345dbed0b83a47668c83cb1f997f8ee1.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">8</p>
+        <span class="caption"><p class="qwert">Багги на песчаном карьере</p></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/parashut_15.1200x800.jpg)">
+        <img src="../img/parashut_15.1200x800.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">9</p>
+        <span class="caption"><p class="qwert">Прыжек 1000м... страшно... но повторим еще :)</p></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/atv-riding-1.jpg)">
+        <img src="../img/atv-riding-1.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">10</p>
+        <span class="caption"><p class="qwert">А мы на квадриках тут катаемся</p></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/c1c1.jpg)">
+        <img src="../img/c1c1.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">11</p>
+        <span class="caption"><p class="qwert">Зима на снегоходах в Карпатах</p></span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/1499-1024x728.jpg)">
+        <img src="../img/1499-1024x728.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">12</p>
+        <span class="caption"><p class="qwert">Посмотрите какая красота</p></span>
+      </div>
+    </div>
+  </div>
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev swiper-button-white"></div>
+  <div class="swiper-button-next swiper-button-white"></div>
+</div>
+
+<!-- Thumbnail navigation -->
+<div class="swiper-container nav-slider loading">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/pall.jpg)">
+        <img src="img/pall.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">1</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/korost.jpg)">
+        <img src="../img/korost.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">2</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/Peo.jpg)">
+        <img src="../img/Peo.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">3</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/look.jpg)">
+        <img src="../img/look.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">4</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/Еntertainment.jpg)">
+        <img src="../img/Еntertainment.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">5</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/IMG_20201002_163634.jpg)">
+        <img src="../img/IMG_20201002_163634.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">6</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/8a9601b70940af4ce5862126b34fd24f95d6b148.png)">
+        <img src="../img/8a9601b70940af4ce5862126b34fd24f95d6b148.png" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">7</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/345dbed0b83a47668c83cb1f997f8ee1.jpg)">
+        <img src="../img/345dbed0b83a47668c83cb1f997f8ee1.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">8</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/parashut_15.1200x800.jpg)">
+        <img src="../img/parashut_15.1200x800.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">9</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/atv-riding-1.jpg)">
+        <img src="../img/atv-riding-1.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">10</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/c1c1.jpg)">
+        <img src="../img/c1c1.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">11</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/1499-1024x728.jpg)">
+        <img src="../img/1499-1024x728.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">12</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+    </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+
+      <script  src="js/index.js"></script>
+      <script>
+      // погода
+      var $tempText = $("#temp-text");
+        // эта функция берет температуру из обработчика данных и отображает температуру в соответствии с правильной единицей измерения температуры, а также отображает температуру теплой или холодной.
+        function formatTemperature(kelvin) {
+          var cels = Math.round(kelvin - 273.15);
+          //инициация индикации температуры
+          $tempText.html(cels);
+          var firstClick = false;
+        }
+        //обрабатывает данные ответа и форматирует их соответствующим образом, поскольку это асинхронный объект ответа, вся обработка и форматирование данных должны выполняться в этой функции.
+        function dataHandler(data) {
+          dataString = JSON.stringify(data);
+          console.log(data.main.temp);
+          formatTemperature(data.main.temp);
+          if (data.main.temp && data.sys) {
+            // отображение иконки
+            if (data.weather) {
+              var imgURL = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+              $("#weatherImg").attr("src", imgURL);
+              $("#weather-text").html(data.weather[0].description);
+            }
+        }
+      }
+        function getWeather(locdata) {
+          console.log("getWeather has been called.")
+          var lat = locdata.latitude;
+          var lon = locdata.longitude;
+
+          var apiURI = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&lang=ru&appid=5b58aee62c41eb64fcab16edce2e5cc1";
+      //выводим данные IP
+          if (locdata){
+            console.log("success");
+            $("#city-text").html(locdata.city );
+            // $("#city-text2").html(locdata.country_name);
+          } else {
+          console.log("fail");
+          }
+
+          //делаем запрос на данные о погоде
+          console.log("success getWeather");
+          console.log(apiURI);
+          return $.ajax({
+            url: apiURI,
+            dataType: "jsonp",
+            type: "GET",
+            async: "true",
+          }).done(dataHandler);
+
+        }
+
+        var counter = 0;
+        function getLocation() {
+          console.log("Update# " + counter++);
+          //делаем запрос на локализацию устройства
+          return $.ajax({
+            url: "https://ipapi.co/jsonp/",
+            dataType: "jsonp",
+            type: "GET",
+            async: "true",
+          });
+        }
+        var updateInterval = setInterval(getLocation().done(getWeather), 300000);
+      </script>
+</body>
+</html>

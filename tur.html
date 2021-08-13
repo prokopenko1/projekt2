@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <!-- <script src="js/main.js" charset="utf-8"></script> -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/styleTur.css">
+  <title>ADVENTURES</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+  <!-- <style>
+  body {
+    background: url('../img/edcho3.jpg') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+       background-size: cover;
+  }
+  </style> -->
+</head>
+<body>
+  <!-- прелоадер -->
+  <div class="preloader">
+    <div class="preloader_image"></div>
+  </div>
+  <div class="container-fluid">
+  <!-- навбар -->
+  <nav class="header-section">
+      <div class="inner-header">
+          <div class="logo">
+          <a href="./index.html"><img src="img/noor.png" width="120" height="50" alt=""></a>
+          <div class="weatherLoc">
+            <div id="city">
+                <div  id="weather">
+                  <img src="" id="weatherImg" >
+                  <!-- <h3 class="text-center data-item" id="weather-text"></h3> -->
+                </div>
+                <div  id="temp">
+                  <h5><span id="temp-text"></span> <span id="tempMode">&deg</span></h5>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="wrapper">
+          <div class="menuToggle icon">
+              <div class="hamburger"></div>
+          </div>
+          <ul class="menu">
+            <li ><a href="./index.html">Главная</a></li>
+            <li class="active"><a href="./tur.html">Туры</a></li>
+            <li><a href="./galery.html">Галерея</a></li>
+            <li><a href="./about-us.html">О нас</a></li>
+          </ul>
+
+      </div>
+      </div>
+  </nav>
+
+
+<div class="nameMame">
+  <h1>Наши туры</h1>
+  </div>
+<div class="tabs">
+  <input type="radio"  id="tab1" name="tab-control" checked>
+  <input type="radio" id="tab2" name="tab-control">
+  <input type="radio" id="tab3" name="tab-control">
+  <input type="radio" id="tab4" name="tab-control">
+  <input type="radio" id="tab5" name="tab-control">
+  <ul>
+    <li title="parachute"><label for="tab1" role="button"><img src="img/man-in-hike.svg" alt=""> <br><span>Походы</span></label></li>
+    <li title="hike"><label for="tab2" role="button"> <img src="img/parachute.svg" alt=""> <br><span>Парашюты</span></label></li>
+    <li title="rock"><label for="tab3" role="button"><img src="img/rock.svg" alt=""><br><span>Скалолазанье</span></label></li>
+    <li title="rafting"><label for="tab4" role="button"><img src="img/canoe.svg" alt=""><br><span>Рафтинг</span></label></li>
+    <li title="motr"><label for="tab5" role="button"><img src="img/tyre.svg" alt=""><br><span>Мототуры</span></label></li>
+  </ul>
+
+  <div class="slids"><div class="indicator"></div></div>
+  <div class="content">
+
+        <section class="hike">
+
+          <h2>Походы</h2>
+          <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper wew">
+            <!-- Slides-->
+            <div class="swiper-slide ">
+              <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto" style="width:260px">
+              <img class="card-img-top" src="img/hik1.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+
+                </div>
+                <h4 class="card-title">Поход в лес</h4>
+                <h5 class="card-city text-center">Карпаты</h5>
+                <p class="card-text">Екстим гид Андрей <br> 60 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Поход в Лес(Карпаты)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto" style="width:260px">
+              <img class="card-img-top" src="img/hik2.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+
+                </div>
+                <h4 class="card-title">Говерла </h4>
+                <h5 class="card-city text-center">Карпаты</h5>
+                <p class="card-text">Екстим гид Юрий <br> 50 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Говерла(Карпаты)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto" style="width:260px">
+              <img class="card-img-top" src="img/hik3.jpeg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+
+                </div>
+                <h4 class="card-title">Поход в горы</h4>
+                <h5 class="card-city text-center">Карпаты(зимний)</h5>
+                <p class="card-text">Екстим гид Герман <br> 48 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Поход в горы(зимний)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto" style="width:260px">
+              <img class="card-img-top" src="img/hik4.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+
+                </div>
+                <h4 class="card-title">Поход в лес</h4>
+                <h5 class="card-city text-center">Одесса</h5>
+                <p class="card-text">Екстим гид Александр <br> 72 часа</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Поход в лес(Одесса)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto" style="width:260px">
+              <img class="card-img-top" src="img/hik5.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <h4 class="card-title">Поход в лес</h4>
+                <h5 class="card-city text-center">Днепр</h5>
+                <p class="card-text">Екстим гид Анна <br> 72 часа</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Поход в лес(Днепр)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto" style="width:260px">
+              <img class="card-img-top" src="img/hik6.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+
+                </div>
+                <h4 class="card-title">Синевир</h4>
+                <h5 class="card-city text-center">Карпаты</h5>
+                <p class="card-text">Екстим гид Юрий <br> 55 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Синевир(Карпаты)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto" style="width:260px">
+              <img class="card-img-top" src="img/hik7.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+
+                </div>
+                <h4 class="card-title">о. Хортица</h4>
+                <h5 class="card-city text-center">Запорожье</h5>
+                <p class="card-text">Екстим гид Алексей <br> 60 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='о. Хортицас(Запорожье)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto" style="width:260px">
+              <img class="card-img-top" src="img/hik8.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+
+                </div>
+                <h4 class="card-title">Припять</h4>
+                <h5 class="card-city text-center">Чернобль</h5>
+                <p class="card-text">Екстим гид Герман<br> 7 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Припять(Чернобль)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto" style="width:260px">
+              <img class="card-img-top" src="img/hik9.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+
+                </div>
+                <h4 class="card-title">Кемпинг</h4>
+                <h5 class="card-city text-center">Харьков</h5>
+                <p class="card-text">Екстим гид Алексей <br> 48 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Кемпинг(Харьков)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide ">
+              <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto" style="width:260px">
+              <img class="card-img-top" src="img/hik10.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+
+                </div>
+                <h4 class="card-title">Поход в лес</h4>
+                <h5 class="card-city text-center">Луцк</h5>
+                <p class="card-text">Екстим гид Анна <br>48 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Поход в лес(Луцк)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+            </div>
+
+
+
+          </div>
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+
+          <!-- If we need scrollbar -->
+
+          <div class="swiper-scrollbar"></div>
+
+        </div>
+
+        </section>
+        <section class="parachute" >
+              <h2>Парашюты</h2>
+              <div class="row col-12 d-inline-flex justify-content-between mx-auto">
+
+                <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+                  <img class="card-img-top" src="img/ten1.jpg" alt="Card image">
+                  <div class="card-img-overlay">
+                    <div class="rating-result">
+                      <span></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
+                    <h4 class="card-title">Бейсджампинг</h4>
+                    <h5 class="card-city text-center">Киев</h5>
+                    <p class="card-text">Екстим гид Андрей <br> 6 часов</p>
+                    <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Бейсджампинг(Киев)'"><a href="#popup2">Заказать тур</a></button>
+                  </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+                  <img class="card-img-top" src="img/ten2.jpg" alt="Card image">
+                  <div class="card-img-overlay">
+                    <div class="rating-result">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
+                    <h4 class="card-title">Фрифлай</h4>
+                    <h5 class="card-city text-center">Харьков</h5>
+                    <p class="card-text">Екстим гид Анна <br> 6 часов</p>
+                    <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Фрифлай(Харьков)'"><a href="#popup2">Заказать тур</a></button>
+                  </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+                  <img class="card-img-top" src="img/ten3.jpg" alt="Card image">
+                  <div class="card-img-overlay">
+                    <div class="rating-result">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
+                    <h4 class="card-title">Свуп</h4>
+                    <h5 class="card-city text-center">Запорожье</h5>
+                    <p class="card-text">Екстим гид Юрий <br> 10 часов</p>
+                    <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Свуп(Запорожье)'"><a href="#popup2">Заказать тур</a></button>
+                  </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+                  <img class="card-img-top" src="img/ten4.jpg" alt="Card image">
+                  <div class="card-img-overlay">
+                    <div class="rating-result">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
+                    <h4 class="card-title">Фристайл</h4>
+                    <h5 class="card-city text-center">Днепр</h5>
+                    <p class="card-text">Екстим гид Андрей <br> 60 часов</p>
+                    <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Фристайл(Днепр)'"><a href="#popup2">Заказать тур</a></button>
+                  </div>
+                </div>
+
+
+            </div>
+        </section>
+
+            <section class="rock">
+              <h2>Скалолазанье</h2>
+              <div class="row col-12 d-inline-flex justify-content-between mx-auto">
+
+                <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+                  <img class="card-img-top" src="img/den1.jpg" alt="Card image">
+                  <div class="card-img-overlay">
+                    <div class="rating-result">
+                      <span></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
+                    <h4 class="card-title">Боулдеринг</h4>
+                    <h5 class="card-city text-center">Днепр</h5>
+                    <p class="card-text">Екстим гид Герман <br> 8 часов</p>
+                    <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Боулдеринг(Днепр)'"><a href="#popup2">Заказать тур</a></button>
+                  </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+                  <img class="card-img-top" src="img/den2.jpg" alt="Card image">
+                  <div class="card-img-overlay">
+                    <div class="rating-result">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
+                    <h4 class="card-title">Фри соло</h4>
+                    <h5 class="card-city text-center">Одесса</h5>
+                    <p class="card-text">Екстим гид Андрей <br> 6 часов</p>
+                    <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Фри соло(Одесса)'"><a href="#popup2">Заказать тур</a></button>
+                  </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+                  <img class="card-img-top" src="img/den3.jpg" alt="Card image">
+                  <div class="card-img-overlay">
+                    <div class="rating-result">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
+                    <h4 class="card-title">Дип вотер</h4>
+                    <h5 class="card-city text-center">Одесса</h5>
+                    <p class="card-text">Екстим гид Алексей <br> 6 часов</p>
+                    <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Дип вотер(Одесса)'"><a href="#popup2">Заказать тур</a></button>
+                  </div>
+                </div>
+
+                <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+                  <img class="card-img-top" src="img/den4.jpg" alt="Card image">
+                  <div class="card-img-overlay">
+                    <div class="rating-result">
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                      <span class="active"></span>
+                    </div>
+                    <h4 class="card-title">Детский тур</h4>
+                    <h5 class="card-city text-center">Краматорск</h5>
+                    <p class="card-text">Екстим гид Юрий <br> 6 часов</p>
+                    <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Поход в Лес(Карпаты)'"><a href="#popup2">Заказать тур</a></button>
+                  </div>
+                </div>
+
+
+            </div>
+              </section>
+    <section class="rafting">
+          <h2>Рафтинг</h2>
+          <div class="row col-12 d-inline-flex justify-content-between mx-auto">
+
+            <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+              <img class="card-img-top" src="img/raf1.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <h4 class="card-title">Рафтинг</h4>
+                <h5 class="card-city text-center">Карпаты</h5>
+                <p class="card-text">Екстим гид Александр <br> 6 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Рафтинг(Карпаты)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+              <img class="card-img-top" src="img/raf2.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <h4 class="card-title">Рафтинг</h4>
+                <h5 class="card-city text-center">Днепр</h5>
+                <p class="card-text">Екстим гид Анна <br> 6 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Рафтинг(Днепр)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+              <img class="card-img-top" src="img/raf3.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <h4 class="card-title">Рафтинг</h4>
+                <h5 class="card-city text-center">Киев</h5>
+                <p class="card-text">Екстим гид Андрей <br> 7 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Рафтинг(Киев)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+              <img class="card-img-top" src="img/raf4.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <h4 class="card-title">Рафтинг</h4>
+                <h5 class="card-city text-center">Запорожье</h5>
+                <p class="card-text">Екстим гид Юрий <br> 5 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Рафтинг(Запорожье)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+
+
+        </div>
+          </section>
+    <section class="motor" >
+          <h2>Мототуры</h2>
+          <div class="row col-12 d-inline-flex justify-content-between mx-auto">
+
+            <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+              <img class="card-img-top" src="img/bag1.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <h4 class="card-title">Квадро</h4>
+                <h5 class="card-city text-center">Харьков</h5>
+                <p class="card-text">Екстим гид Михаил <br> 5 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Квадро'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+              <img class="card-img-top" src="img/bag2.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <h4 class="card-title">Багги</h4>
+                <h5 class="card-city text-center">Днепр</h5>
+                <p class="card-text">Екстим гид Андрей <br> 6 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Багги'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+              <img class="card-img-top" src="img/bag3.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <h4 class="card-title">Кросс</h4>
+                <h5 class="card-city text-center">Святогорск</h5>
+                <p class="card-text">Екстим гид Андрей <br> 60 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Кросс'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+
+            <div class="card col-lg-4 col-md-4 col-sm-12 mx-auto p-1" style="width:260px">
+              <img class="card-img-top" src="img/bag4.jpg" alt="Card image">
+              <div class="card-img-overlay">
+                <div class="rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <h4 class="card-title">Сноубайки</h4>
+                <h5 class="card-city text-center">Карпаты(зимний)</h5>
+                <p class="card-text">Екстим гид Анна <br> 5 часов</p>
+                <button class="turName btn  col-12 " onclick="document.getElementById('boock').value='Сноубайки(Карпаты)'"><a href="#popup2">Заказать тур</a></button>
+              </div>
+            </div>
+
+
+        </div>
+            </section>
+
+  </div>
+  </div>
+  </div>
+  <div id="popup2" class="popup" >
+
+  <div class="popup_body">
+    <div class="left">
+      <div class="login">Login</div>
+
+      <div class="eula">Наш консультант перезвонит вам после заполнения формы</div>
+    </div>
+
+    <div class="right">
+      <svg viewBox="0 0 320 300">
+        <defs>
+          <linearGradient
+                          inkscape:collect="always"
+                          id="linearGradient"
+                          x1="13"
+                          y1="193.49992"
+                          x2="307"
+                          y2="193.49992"
+                          gradientUnits="userSpaceOnUse">
+            <stop
+                  style="stop-color:#ff9900;"
+                  offset="0"
+                  id="stop876" />
+            <stop
+                  style="stop-color:#c4ff00;"
+                  offset="1"
+                  id="stop878" />
+          </linearGradient>
+        </defs>
+        <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
+      </svg>
+      <a href="#titleText" class="popup_close">Закрыть</a>
+      <div class="form">
+
+        <form class="form_body" id="form" action="telegram.php" method="POST" onsubmit="return checkForm()" required>
+          <input type="text" class="form-control1 "  id="boock" placeholder=" Название тура" name="user_tyr" readonly>
+          <label for="forName">Имя</label>
+          <input type="name" id="forName" name="user_name"  required>
+          <label for="formPhone">Телефон</label>
+          <input type="phone" id="formPhone" name="user_phone" class="reqphoneform_input" required>
+          <input type="submit" id="submit" value="Отправить">
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script>
+    <script  src="js/swip.js"></script>
+    <script  src="js/main.js"></script>
+    <script>
+    let inputName  = document.getElementById('forName');
+    let inputPhone  = document.getElementById('formPhone');
+    inputName.addEventListener("input" , function(event) {
+      if (inputName.validity.typeMismatch) {
+      inputName.setCustomValidity("Введите свое имя");
+    } else {
+      email.setCustomValidity("");
+    }
+    });
+    function checkForm(){
+      var n1= document.getElementById("forName").value;
+      var templateName = /^([а-яё\s]+|[a-z\s]+)$/iu;
+      if (!templateName.test(n1)) {
+          alert('имя не коректно');
+          return false;
+      }
+
+      return true
+    }
+    $(".reqphoneform_input").on('input', function(e){
+      this.value = this.value.replace(/[^0-9\.]/g, '');
+    });
+    // форма
+    var current = null;
+    document.querySelector('#forName').addEventListener('focus', function(e) {
+      if (current) current.pause();
+      current = anime({
+        targets: 'path',
+        strokeDashoffset: {
+          value: 0,
+          duration: 700,
+          easing: 'easeOutQuart'
+        },
+        strokeDasharray: {
+          value: '240 1386',
+          duration: 700,
+          easing: 'easeOutQuart'
+        }
+      });
+    });
+    document.querySelector('#formPhone').addEventListener('focus', function(e) {
+      if (current) current.pause();
+      current = anime({
+        targets: 'path',
+        strokeDashoffset: {
+          value: -336,
+          duration: 700,
+          easing: 'easeOutQuart'
+        },
+        strokeDasharray: {
+          value: '240 1386',
+          duration: 750,
+          easing: 'easeOutQuart'
+        }
+      });
+    });
+    document.querySelector('#submit').addEventListener('focus', function(e) {
+      if (current) current.pause();
+      current = anime({
+        targets: 'path',
+        strokeDashoffset: {
+          value: -730,
+          duration: 700,
+          easing: 'easeOutQuart'
+        },
+        strokeDasharray: {
+          value: '530 1386',
+          duration: 700,
+          easing: 'easeOutQuart'
+        }
+      });
+    });
+    // погода
+    var $tempText = $("#temp-text");
+      // эта функция берет температуру из обработчика данных и отображает температуру в соответствии с правильной единицей измерения температуры, а также отображает температуру теплой или холодной.
+      function formatTemperature(kelvin) {
+        var cels = Math.round(kelvin - 273.15);
+        //инициация индикации температуры
+        $tempText.html(cels);
+        var firstClick = false;
+      }
+      //обрабатывает данные ответа и форматирует их соответствующим образом, поскольку это асинхронный объект ответа, вся обработка и форматирование данных должны выполняться в этой функции.
+      function dataHandler(data) {
+        dataString = JSON.stringify(data);
+        console.log(data.main.temp);
+        formatTemperature(data.main.temp);
+        if (data.main.temp && data.sys) {
+          // отображение иконки
+          if (data.weather) {
+            var imgURL = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+            $("#weatherImg").attr("src", imgURL);
+            $("#weather-text").html(data.weather[0].description);
+          }
+      }
+    }
+      function getWeather(locdata) {
+        console.log("getWeather has been called.")
+        var lat = locdata.latitude;
+        var lon = locdata.longitude;
+
+        var apiURI = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&lang=ru&appid=5b58aee62c41eb64fcab16edce2e5cc1";
+    //выводим данные IP
+        if (locdata){
+          console.log("success");
+          $("#city-text").html(locdata.city );
+          // $("#city-text2").html(locdata.country_name);
+        } else {
+        console.log("fail");
+        }
+
+        //делаем запрос на данные о погоде
+        console.log("success getWeather");
+        console.log(apiURI);
+        return $.ajax({
+          url: apiURI,
+          dataType: "jsonp",
+          type: "GET",
+          async: "true",
+        }).done(dataHandler);
+
+      }
+
+      var counter = 0;
+      function getLocation() {
+        console.log("Update# " + counter++);
+        //делаем запрос на локализацию устройства
+        return $.ajax({
+          url: "https://ipapi.co/jsonp/",
+          dataType: "jsonp",
+          type: "GET",
+          async: "true",
+        });
+      }
+      var updateInterval = setInterval(getLocation().done(getWeather), 300000);
+    </script>
+</body>
+</html>

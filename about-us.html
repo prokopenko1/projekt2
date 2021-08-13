@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styleAbout.css">
+  <title>ADVENTURES</title>
+  <!-- <style>
+
+    body {
+      background: #db5a5a;
+    }
+  </style> -->
+</head>
+
+<body>
+  <!-- прелоадер -->
+  <div class="preloader">
+    <div class="preloader_image"></div>
+  </div>
+
+  <!-- навбар -->
+  <div class="container-fluid">
+  <nav class="header-section">
+
+      <div class="inner-header">
+        <div class="logo">
+        <a href="./index.html"><img src="img/noor.png" width="120" height="50" alt=""></a>
+        <div class="weatherLoc">
+          <div id="city">
+              <div  id="weather">
+                <img src="" id="weatherImg" >
+                <!-- <h3 class="text-center data-item" id="weather-text"></h3> -->
+              </div>
+              <div  id="temp">
+                <h5><span id="temp-text"></span> <span id="tempMode">&deg</span></h5>
+              </div>
+          </div>
+        </div>
+    </div>
+      <div class="wrapper">
+          <div class="menuToggle icon">
+              <div class="hamburger"></div>
+          </div>
+          <ul class="menu">
+            <li ><a href="./index.html">Главная</a></li>
+            <li ><a href="./tur.html">Туры</a></li>
+            <li><a href="./galery.html">Галерея</a></li>
+            <li class="active"><a href="./about-us.html">О нас</a></li>
+          </ul>
+      </div>
+      </div>
+  </nav>
+
+    <div class="about" id="gid" >
+      <h1 class="col-12 text-center">Наши гиды</h1>
+    </div>
+
+    <div class="slider mx-auto">
+
+
+  <!-- slider1 -->
+      <div class="slider_items ">
+      <div class="item row col-12  mt-5  mx-auto">
+        <div class="gidName col-lg-6 col-md-6 col-sm-12  align-self-center " >
+          <img class="gidImage col-12  " src="img/gid11.png" alt="">
+        </div>
+      <div class="infogid col-lg-6 col-md-6 col-sm-12  " >
+          <h5 class="mt-2">Экстрим гид</h5>
+          <h2 class="mt-4 ">Юрий Антипов</h2>
+          <br>
+          <h6 class="mt-4">Ваши эмоции - моя задача <br> Этого вы лолго не забудите!</h6>
+      <div class="d-flex flex-row justify-content-between mx-auto  mt-5">
+          <div class="  d26">29<p class="infotext"><br>Возраст</p></div>
+          <div class="  d26"> 10<p class="infotext"><br>Опты в туризме</p></div>
+          <div class="  d26">89<p class="infotext"><br>Туров за плечами</p></div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!-- slider2 -->
+          <div class="slider_items">
+          <div class="item row col-12  mt-5  mx-auto">
+            <div class="gidName col-lg-6 col-md-6 col-sm-12  align-self-center " >
+              <img class="gidImage col-12  " src="img/gid33.png" alt="">
+            </div>
+          <div class="infogid col-lg-6 col-md-6 col-sm-12  " >
+              <h5 class="mt-2">Экстрим гид</h5>
+              <h2 class="mt-4 ">Андрей Попов</h2>
+              <br>
+              <h6 class="mt-4">Ваши эмоции - моя задача <br> Этого вы лолго не забудите!</h6>
+          <div class="d-flex flex-row justify-content-between mx-auto  mt-5">
+              <div class="  d26">31<p class="infotext"><br>Возраст</p></div>
+              <div class="  d26"> 10<p class="infotext"><br>Опты в туризме</p></div>
+              <div class="  d26">77<p class="infotext"><br>Туров за плечами</p></div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <!-- slider3 -->
+              <div class="slider_items">
+              <div class="item row col-12  mt-5  mx-auto">
+                <div class="gidName col-lg-6 col-md-6 col-sm-12  align-self-center " >
+                  <img class="gidImage col-12  " src="img/gid44.png" alt="">
+                </div>
+              <div class="infogid col-lg-6 col-md-6 col-sm-12  " >
+                  <h5 class="mt-2">Экстрим гид</h5>
+                  <h2 class="mt-4 ">Юрий Марич</h2>
+                  <br>
+                  <h6 class="mt-4">Ваши эмоции - моя задача <br> Этого вы лолго не забудите!</h6>
+              <div class="d-flex flex-row justify-content-between mx-auto  mt-5">
+                  <div class="  d26">5<p class="infotext"><br>Возраст</p></div>
+                  <div class="  d26"> 10<p class="infotext"><br>Опты в туризме</p></div>
+                  <div class="  d26">59<p class="infotext"><br>Туров за плечами</p></div>
+              </div>
+              </div>
+              </div>
+              </div>
+              <!-- slider4 -->
+                  <div class="slider_items">
+                  <div class="item row col-12  mt-5  mx-auto">
+                    <div class="gidName col-lg-6 col-md-6 col-sm-12  align-self-center " >
+                      <img class="gidImage col-12  " src="img/gid222.png" alt="">
+                    </div>
+                  <div class="infogid col-lg-6 col-md-6 col-sm-12  " >
+                      <h5 class="mt-2">Экстрим гид</h5>
+                      <h2 class="mt-4 ">Александр Антипов</h2>
+                      <br>
+                      <h6 class="mt-4">Ваши эмоции - моя задача <br> Этого вы лолго не забудите!</h6>
+                  <div class="d-flex flex-row justify-content-between mx-auto  mt-5">
+                      <div class="  d26">27<p class="infotext"><br>Возраст</p></div>
+                      <div class="  d26"> 10<p class="infotext"><br>Опты в туризме</p></div>
+                      <div class="  d26">99<p class="infotext"><br>Туров за плечами</p></div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+<!-- slider5 -->
+      <div class="slider_items">
+        <div class="item row col-12  mt-5  mx-auto">
+        <div class="gidName col-lg-6 col-md-6 col-sm-12  align-self-center " >
+          <img class="gidImage col-12  " src="img/gid22.png" alt="">
+      </div>
+      <div class="infogid col-lg-6 col-md-6 col-sm-12  " >
+          <h5 class="mt-2">Экстрим гид</h5>
+          <h2 class="mt-4 ">Алексей Федоров</h2>
+          <br>
+          <h6 class="mt-4">Ваши эмоции - моя задача <br> Этого вы лолго не забудите!</h6>
+          <div class="d-flex flex-row justify-content-between mx-auto  mt-5">
+          <div class="  d26">25<p class="infotext"><br>Возраст</p></div>
+          <div class="  d26"> 10<p class="infotext"><br>Опты в туризме</p></div>
+          <div class="  d26">79<p class="infotext"><br>Туров за плечами</p></div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+<!-- slider6 -->
+      <div class="slider_items">
+          <div class="item row col-12  mt-5  mx-auto">
+          <div class="gidName col-lg-6 col-md-6 col-sm-12  align-self-center " >
+            <img class="gidImage col-12  " src="img/gid99.png" alt="">
+          </div>
+          <div class=" infogid col-lg-6 col-md-6 col-sm-12  ">
+            <h5 class="mt-2">Экстрим гид</h5>
+            <h2 class="mt-4 ">Анна Юрченко</h2>
+            <br>
+            <h6 class="mt-4">Ваши эмоции - моя задача <br> Этого вы лолго не забудите!</h6>
+          <div class="d-flex flex-row justify-content-between mx-auto  mt-5">
+          <div class="  d26">27<p class="infotext"><br>Возраст</p></div>
+          <div class="  d26"> 10<p class="infotext"><br>Опты в туризме</p></div>
+          <div class="  d26">59<p class="infotext"><br>Туров за плечами</p></div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!-- slider7 -->
+            <div class="slider_items">
+                <div class="item row col-12  mt-5  mx-auto">
+                <div class="gidName col-lg-6 col-md-6 col-sm-12  align-self-center " >
+                  <img class="gidImage col-12  " src="img/gid111.png" alt="">
+                </div>
+                <div class=" infogid col-lg-6 col-md-6 col-sm-12  ">
+                  <h5 class="mt-2">Экстрим гид</h5>
+                  <h2 class="mt-4 ">Анна Марич</h2>
+                  <br>
+                  <h6 class="mt-4">Ваши эмоции - моя задача <br> Этого вы лолго не забудите!</h6>
+                <div class="d-flex flex-row justify-content-between mx-auto  mt-5">
+                <div class="  d26">27<p class="infotext"><br>Возраст</p></div>
+                <div class="  d26"> 10<p class="infotext"><br>Опты в туризме</p></div>
+                <div class="  d26">68<p class="infotext"><br>Туров за плечами</p></div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <!-- slider8 -->
+                  <div class="slider_items">
+                      <div class="item row col-12  mt-5  mx-auto">
+                      <div class="gidName col-lg-6 col-md-6 col-sm-12  align-self-center " >
+                        <img class="gidImage col-12  " src="img/gid444.png" alt="">
+                      </div>
+                      <div class=" infogid col-lg-6 col-md-6 col-sm-12  ">
+                        <h5 class="mt-2">Экстрим гид</h5>
+                        <h2 class="mt-4 ">Герман Топалов</h2>
+                        <br>
+                        <h6 class="mt-4">Ваши эмоции - моя задача <br> Этого вы лолго не забудите!</h6>
+                      <div class="d-flex flex-row justify-content-between mx-auto  mt-5">
+                      <div class="  d26">27<p class="infotext"><br>Возраст</p></div>
+                      <div class="  d26"> 10<p class="infotext"><br>Опты в туризме</p></div>
+                      <div class="  d26">79<p class="infotext"><br>Туров за плечами</p></div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+            </div>
+
+
+     <div class="row mt-5">
+       <div class="col-12">
+         <h2 class="commentes">Отзывы</h2>
+
+       <div class="col-lg-11 col-md-10 col-sm-10 mx-auto " id="renNemComent">
+         <div id="coment-field"></div>
+
+    <div class="col-12">
+
+        <div class="form-group col-lg-6 col-md-6 col-sm-10 mx-auto p-2">
+          <span class="massage"></span>
+        <form method="POST" required >
+          <label for="comment-name">Имя</label>
+          <input type="text"  class="form-control shadow-none" id="comment-name"  placeholder="Ваше имя" required>
+          <label for="comment-body">Отзыв</label>
+          <input type="text" class="form-control shadow-none" id="comment-body"   placeholder="Коментарии" required>
+          <button type="submit" id="comment-add"  >Отправить</button>
+
+      </form>
+        </div>
+    </div>
+    </div>
+</div>
+  </div>
+  <!-- фрейм -->
+  <div class="embed-responsive embed-responsive-21by9 col-lg-11 col-md-10 col-sm-10 mx-auto d-flex mt-5 mb-5">
+   <iframe class="embed-responsive-item"  width="100%"   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84215.70348344953!2d37.484401318599645!3d48.729545510310516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40df97a4c0ea9b9b%3A0x6cfddec1592678ec!2z0JrRgNCw0LzQsNGC0L7RgNGB0LosINCU0L7QvdC10YbQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1607553017577!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script  src="js/main.js"></script>
+    <script>
+    let btnCom = document.getElementById('comment-add');
+      btnCom.addEventListener("click", function(event){
+        let name1 = document.getElementById("comment-name").value;
+        let comment1 = document.getElementById("comment-body").value;
+
+      if(name1 == "" || comment1 ==""){
+       alert("Вы не ввели данные!")
+        return;
+      }
+      })
+    // коментарии
+    let comments = [];
+    loadComments();
+    document.getElementById('comment-add').onclick = function() {
+    event.preventDefault();
+      let commentName = document.getElementById('comment-name');
+      let commentBody = document.getElementById('comment-body');
+
+      let comment = {
+        name: commentName.value,
+        body: commentBody.value,
+        time: Math.floor(Date.now()/1000)
+      }
+        commentName.value = '';
+        commentBody.value = '';
+        comments.push(comment);
+        saveComments();
+        showComments();
+    }
+    function saveComments() {
+      localStorage.setItem('comments', JSON.stringify(comments));
+    }
+    function loadComments(){
+      if(localStorage.getItem('comments')) comments = JSON.parse(localStorage.getItem('comments'));
+      showComments();
+    }
+    function showComments() {
+      let commentField = document.getElementById('coment-field');
+      let out = '';
+      comments.forEach(function(item){
+      out +=`<p class="text-right small"><i>${timeConverter(item.time)}</i></p>`;
+      out += `<p class="text"><b>${item.name}</b></p>`;
+      out += `<p class="text">${item.body}</p>`;
+      });
+       commentField.innerHTML = out;
+    }
+    function timeConverter(UNIX_timestamp){
+      var a = new Date(UNIX_timestamp * 1000);
+      var months = [ 'Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Ноябрь','Декабрь',];
+      var year = a.getFullYear();
+      var month = months[a.getMonth()];
+      var date = a.getDate();
+      var hour = a.getHours();
+      var min = a.getMinutes();
+      var sec = a.getSeconds();
+      var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+      return time;
+    }
+    // слайдер о нас
+    $(document).ready(function(){
+        $('.slider').slick();
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script>
+// погода
+var $tempText = $("#temp-text");
+  // эта функция берет температуру из обработчика данных и отображает температуру в соответствии с правильной единицей измерения температуры, а также отображает температуру теплой или холодной.
+  function formatTemperature(kelvin) {
+    var cels = Math.round(kelvin - 273.15);
+    //инициация индикации температуры
+    $tempText.html(cels);
+    var firstClick = false;
+  }
+  //обрабатывает данные ответа и форматирует их соответствующим образом, поскольку это асинхронный объект ответа, вся обработка и форматирование данных должны выполняться в этой функции.
+  function dataHandler(data) {
+    dataString = JSON.stringify(data);
+    console.log(data.main.temp);
+    formatTemperature(data.main.temp);
+    if (data.main.temp && data.sys) {
+      // отображение иконки
+      if (data.weather) {
+        var imgURL = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+        $("#weatherImg").attr("src", imgURL);
+        $("#weather-text").html(data.weather[0].description);
+      }
+  }
+}
+  function getWeather(locdata) {
+    console.log("getWeather has been called.")
+    var lat = locdata.latitude;
+    var lon = locdata.longitude;
+
+    var apiURI = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&lang=ru&appid=5b58aee62c41eb64fcab16edce2e5cc1";
+//выводим данные IP
+    if (locdata){
+      console.log("success");
+      $("#city-text").html(locdata.city );
+      // $("#city-text2").html(locdata.country_name);
+    } else {
+    console.log("fail");
+    }
+
+    //делаем запрос на данные о погоде
+    console.log("success getWeather");
+    console.log(apiURI);
+    return $.ajax({
+      url: apiURI,
+      dataType: "jsonp",
+      type: "GET",
+      async: "true",
+    }).done(dataHandler);
+
+  }
+
+  var counter = 0;
+  function getLocation() {
+    console.log("Update# " + counter++);
+    //делаем запрос на локализацию устройства
+    return $.ajax({
+      url: "https://ipapi.co/jsonp/",
+      dataType: "jsonp",
+      type: "GET",
+      async: "true",
+    });
+  }
+  var updateInterval = setInterval(getLocation().done(getWeather), 300000);
+
+
+</script>
+</body>
+</html>
